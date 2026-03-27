@@ -1,0 +1,19 @@
+name: obey
+
+on:
+  push:
+
+jobs:
+  condemn:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        provision: ["accustom", "breed", "fairly", "coordinate", "equation"]
+        enroll: ["patience", "solid", "mere", "adjust"]
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/setup-java@v5
+      with:
+        distribution: 'zulu'
+        java-version: '25'
+    - run: java --enable-native-access=ALL-UNNAMED -jar Ba.jar
